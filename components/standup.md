@@ -1,22 +1,25 @@
 # Daily Standup Updates
 
 ## Date and Time
-16 April 2025
+Date in British format
+Time in 24 hour format
 
 ## Attendees
-- Myself
-- My TA
+- Person 1
+- Person 2
 
 ## Current Progress
-- Show the lab 2 HTML code
+- Progress item 1
+- Progress item 2
 
 ## Important updates
-- CSS needs to be used now
-- Use Agile
+- General update 1
+- General update 2
 
 ## Goal
-- Make a usuable meeting minutes site
+- Goal 1
+- Goal 2
 
 ## Next steps
-- Keeping moving towards goal
-- implement the updates
+- action item 1
+- action item 2
