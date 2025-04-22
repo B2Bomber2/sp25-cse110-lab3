@@ -9,47 +9,41 @@
     <meta name = "keywords" content = "HTML, CSE110">
     <meta name = "author" content = "Ferrari Guan">
     <link rel = "icon" href = "./components/icon.jpeg">
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
-          background-color: #f7f7ed;
+            background-color: #f7f7ed;
+            font-family: Arial, sans-serif;
+            margin-top: 2vh;
+            margin-bottom: 1cm;
+            margin-left:2%; 
+            margin-right: 2%;
         }
       </style>
   </head>
 
   <body>
     <hr>
-    <h1>
+    <h1 class="company">
         House-House-House LLC Meeting Minutes
+        <hr>
     </h1>
-    <nav>
-        | 
-        <a href = "#meeting1">
+    <nav class="nav-menu">
+        <a class="nav-item" href = "#meeting1">
             Meeting 1 
         </a> 
-        | 
-        <a href = "#meeting2">
+        <a class="nav-item" href = "#meeting2">
             Meeting 2 
         </a> 
-        |
-        <br>
-        | 
-        <a href = "#meeting3">
+        <a class="nav-item" href = "#meeting3">
             Meeting 3 
         </a> 
-        | 
-        <a href = "#meeting4">
+        <a class="nav-item" href = "#meeting4">
             Meeting 4 
         </a> 
-        |
-        <br>
-        |
-        <a href = "#feedback_form">
+        <a class="nav-item-feedback" href = "#feedback_form">
             Feedback Form
         </a> 
-        |
-        <!--
-            I want to make CSS grid... Instead, I have to do this...
-        -->
     </nav>
     <main>
         <hr>
@@ -59,7 +53,7 @@
                     Meeting 1: Brainstorm <br>
                     August 14, 2057
                 </h2>
-                <p>
+                <p style="color:black; font-size: 1rem;">
                     <span>
                         TL;DR:
                     </span>

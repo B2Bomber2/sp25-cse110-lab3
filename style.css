@@ -1,2 +1,71 @@
-/* The start of the CSS file */
+/* Start of CSS file */
 
+.nav-menu {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(0,0,0);
+    margin:auto;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(64, 100%, 84%);
+    border-radius: 6px;
+    height: 60px;
+
+}
+
+/* the feedback forms takes up the entire bottom row */
+.nav-item-feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: color(srgb 1 0.835 0.502);
+    border-radius: 6px;
+    height: 60px;
+    grid-column: 1 / -1;
+}
+
+/* smaller device size */
+@media (max-width: 768px) {
+    .nav-menu {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-item-feedback {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 10px 0;
+    }
+}
+
+/* phone size */
+@media (max-width: 480px) {
+    .nav-item-feedback {
+        font-size: 16px;
+    }
+}
+
+.company {
+    color:rgb(168,55,20); 
+    text-align:center; 
+    font-family: fantasy;
+    font-size: 2rem; 
+    text-decoration: underline overline red;
+    margin: 5px 5px 5px 5px
+}
+
+.feedback-form{
+    color: color-mix(method, color1[ p1], color2[ p2]);
+    
+}
+
+.video{
+    width: calc(100% - var(--actions-width));
+}
