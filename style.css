@@ -31,7 +31,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: color(srgb 1 0.835 0.502);
+    background-color: lightsalmon;
+    color: color(srgb 1 0.835 0.502);
     border-radius: 6px;
     border-style: groove;
     border-color:burlywood;
@@ -82,7 +83,7 @@ nav-item-feedback:active {
     margin: 5ex 5px 5vw 5pc;
     border-style: ridge;
     border-color: cadetblue;
-    border-width:1%;
+    border-width:1pt;
 }
 
 .meeting-titles {
@@ -119,7 +120,7 @@ img[width="200"] {
 .feedback-form{
     background-color: pink;
     margin:auto;
-    color: color-mix(in srgb, red 30%, blue 70%);
+    color: color-mix(in srgb, red 30%, blue);
     min-width: 400px;
 }
 
@@ -139,7 +140,7 @@ li ~ li {
 
 /* mix opposite colors on the color wheel, what could go wrong? */
 a.actions {
-    color: color-mix(in srgb, orange 30%, cyan 70%);
+    color: color-mix(in srgb, orange 30%, cyan);
       font-weight: bold;
 }
 
@@ -166,6 +167,6 @@ section details summary {
 #feedback_form {
     display: flex;
     justify-content: right;
-    align-items: left;
+    align-items: flex-start;
     animation: spin 3s linear infinite;
 }
