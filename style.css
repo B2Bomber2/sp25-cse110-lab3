@@ -1,4 +1,8 @@
-/* Start of CSS file */
+/* The most cursed CSS you will see */
+
+* {
+    align-self: center;
+}
 
 .nav-menu {
     display: grid;
@@ -16,8 +20,10 @@
     align-items: center;
     background-color: hsl(64, 100%, 84%);
     border-radius: 6px;
-    height: 60px;
+    border-style: solid;
+    border-color: pink;
 
+    height: 60px;
 }
 
 /* the feedback forms takes up the entire bottom row */
@@ -27,8 +33,20 @@
     align-items: center;
     background-color: color(srgb 1 0.835 0.502);
     border-radius: 6px;
+    border-style: groove;
+    border-color:burlywood;
     height: 60px;
     grid-column: 1 / -1;
+}
+
+.nav-item:hover {
+    background-color: #0066cc;
+    color: white;
+}
+
+nav-item-feedback:active {
+    background-color: #004080;
+    transform: scale(0.97);
 }
 
 /* smaller device size */
@@ -52,20 +70,102 @@
     }
 }
 
+/* The company logo title thing at the top */
 .company {
+    position: static;
+    display: block;
     color:rgb(168,55,20); 
     text-align:center; 
     font-family: fantasy;
-    font-size: 2rem; 
+    font-size: 3rem; 
     text-decoration: underline overline red;
-    margin: 5px 5px 5px 5px
+    margin: 5ex 5px 5vw 5pc;
+    border-style: ridge;
+    border-color: cadetblue;
+    border-width:1%;
 }
+
+.meeting-titles {
+    position:sticky;
+    display:inline;
+    color: var(--primary-color, cyan);
+    font-size: 24px;
+    padding-top: 5%;
+    padding-bottom: 5pc;
+    padding-left: 80px;
+    padding-right: 4pt;
+}
+
+#meeting2, #meeting3 {
+    color:gray;
+    text-align: center;
+}
+
+/* This meeting is too far in the future, so hide for now */
+#meeting4 {
+    display: none;
+    margin: 0 auto;
+}
+
+h3 {
+    color:rgb(82, 0, 100);
+    font-size: 18px;
+}
+
+img[width="200"] {
+    border: 18px dashed turquoise;
+  }
 
 .feedback-form{
-    color: color-mix(method, color1[ p1], color2[ p2]);
-    
+    background-color: pink;
+    margin:auto;
+    color: color-mix(in srgb, red 30%, blue 70%);
+    min-width: 400px;
 }
 
-.video{
-    width: calc(100% - var(--actions-width));
+#meeting1_video > section {
+    height: 50%;
+    width: 1ex;
+}
+
+#meeting1_audio audio {
+    width: 175pt;
+}
+
+li ~ li {
+    font-size: 100%;
+    color:gold;
+}
+
+/* mix opposite colors on the color wheel, what could go wrong? */
+a.actions {
+    color: color-mix(in srgb, orange 30%, cyan 70%);
+      font-weight: bold;
+}
+
+/* tilted things just to make it offputting for people */
+section:has(h3) {
+    transform: rotate(1deg);
+}
+
+section details summary {
+    color: #fa1bdc;
+    transform: rotate(-2deg);
+}
+
+/* Spin the feedback form because normal feedback forms are too boring */
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+#feedback_form {
+    display: flex;
+    justify-content: right;
+    align-items: left;
+    animation: spin 3s linear infinite;
 }
